@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math River Crossing - Bangladesh Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚣 Math River Crossing</h1>
+    <p class="subtitle">Fun Learning Inspired by Children in Bangladesh 🇧🇩</p>
+    <p class="developer">Developer: MD ATIQUL ISLAM (Atik)</p>
+
+    <div class="controls">
+        <select id="level">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button onclick="startGame()">Start</button>
+    </div>
+
+    <div class="timer">⏳ Time: <span id="time">60</span>s</div>
+    <div class="score">⭐ Score: <span id="score">0</span></div>
+
+    <div class="river">
+        <div id="boat">⛵</div>
+    </div>
+
+    <div class="question-box">
+        <h2 id="question"></h2>
+        <input type="number" id="answer" placeholder="Answer">
+        <button onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <div class="highscore">
+        🏆 High Score: <span id="highScore">0</span>
+    </div>
+
+    <button onclick="restartGame()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
